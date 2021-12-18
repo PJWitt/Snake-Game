@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
-
+html {
+  min-height: 100%;
+  background: linear-gradient(#f08e1e, #620dff);
+}
 body {
   display: flex;
   flex-direction: column;
@@ -16,17 +19,40 @@ header {
 .board {
   box-sizing: border-box;
   border: 5px solid rgb(182, 153, 58);
-  background: rgba(0, 0, 0, 0.884);
+  background: black;
   width: 580px;
   height: 580px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  box-shadow: 20px 25px 50px rgb(25, 26, 1);
 }
 .grid-item {
   border: 0.5px solid rgb(46, 46, 46);
 
   height: 20px;
   width: 20px;
+}
+.lost {
+  font-size: 200%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+#over {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+#buttons {
+  display: flex;
+  flex-direction: row;
+}
+#startButton {
+  margin: 10px;
+}
+
+#resetButton {
+  margin: 10px;
 }
