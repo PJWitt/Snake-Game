@@ -55,6 +55,8 @@ function makeGrid(x, y) {
       gridItem.dataset.x = j;
       array.push(gridItem);
       board.appendChild(gridItem);
+      start.style.display = "none";
+
       //debugger
     }
     grid.push(array);
